@@ -23,8 +23,8 @@ public class Server {
     }
 
     public static void main(String[] args) {
-        int port = 8010;
-        int poolSize = 10;
+        int port = 8080;
+        int poolSize = 100;
         Server server = new Server(poolSize);
 
         try {
@@ -42,4 +42,5 @@ public class Server {
             server.threadPool.shutdown();
         }
     }
+
 }
